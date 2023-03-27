@@ -66,8 +66,8 @@ h3 {
 .absolute-box {
   margin: 0;
   overflow: scroll;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 8px;
+  padding-right: 8px;
   overflow: auto;
 }
 
@@ -202,20 +202,8 @@ h3 {
   width: 100%;
 }
 
-.task-container {
-  background: rgb(140, 156, 0);
-  display: flex;
-  border-radius: 20px;
-  padding: 0;
-}
-
 .task-outer {
-  margin-bottom: 10px;
-}
-
-.off {
-  /* opacity: 0.5; */
-  background: rgba(140, 156, 0, 0.5);
+  margin-bottom: 5px;
 }
 
 .tasks-container {
@@ -231,8 +219,7 @@ h3 {
 }
 
 .task {
-  color: rgb(255, 226, 216);
-  margin: 5px;
+  color: #333333;
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 0;
@@ -271,6 +258,10 @@ h3 {
   font-size: 17px;
   border: none;
   border-radius: 10px;
+}
+
+.form-control input::placeholder {
+  font-size: 8px;
 }
 
 .form-control select {

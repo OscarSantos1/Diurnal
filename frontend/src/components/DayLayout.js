@@ -28,7 +28,7 @@ const DayLayout = ({
     "No tasks to show"
   );
   return (
-    <div className="relative flex-col space-y-1 items-center h-full w-[25%] bg-[#F3F6FB] rounded-[30px] shadow-lg shadow-[#C0C0C0] p-2 pb-20">
+    <div className="relative flex-col space-y-1 items-center h-full w-[28.5%] bg-slate-100 rounded-[30px] shadow-lg shadow-[#C0C0C0] p-2 pb-20">
       <Header
         title={title}
         toggleShowAdd={toggleShowAdd}

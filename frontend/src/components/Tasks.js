@@ -6,7 +6,7 @@ const Tasks = ({ colId, tasks, onClick, onToggle, showAddTask, showDone }) => {
     <Droppable droppableId={colId}>
       {(droppableProvided, droppableSnapshot) => (
         <div
-          className={showAddTask ? "tasks-container" : "tasks-container"}
+          className="tasks-container"
           ref={droppableProvided.innerRef}
           {...droppableProvided.droppableProps}
         >

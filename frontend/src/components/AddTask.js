@@ -30,9 +30,9 @@ const AddTask = ({ onAdd }) => {
       <form className="flex flex-col" onSubmit={(e) => avoidReload(e)}>
         <label className="text-xs">To do:</label>
         <input
-          className="h-6 rounded-md w-[80%] self-center"
+          className="h-6 rounded-md w-[80%] text-sm pl-1 self-center placeholder:text-xs placeholder:pl-1"
           type="text"
-          placeholder="Add a task"
+          placeholder="Add assignment..."
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
