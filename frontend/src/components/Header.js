@@ -8,7 +8,7 @@ const Header = ({ title, toggleShowAdd, showAddTask, onAdd }) => {
         showAddTask && title == "Today" ? "header-height-open" : "header-height"
       }  bg-white rounded-t-[42px] rounded-b-md`}
     >
-      <div className="flex text-[#3788CC] items-center justify-between rounded-t-[30px] px-3 pt-3">
+      <div className="flex text-[#095089] items-center justify-between rounded-t-[30px] px-3 pt-3">
         <h2 className="font-normal">{title}</h2>
         {title === "Today" ? (
           <Button

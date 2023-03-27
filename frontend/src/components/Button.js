@@ -5,7 +5,7 @@ const Button = ({ color, text, onClick }) => {
     <button
       onClick={onClick}
       style={{ color: color }}
-      className="border border-slate-500 py-1 px-5 rounded-2xl"
+      className="border border-slate-500 py-1 px-5 mr-2 rounded-2xl"
     >
       {text}
     </button>
