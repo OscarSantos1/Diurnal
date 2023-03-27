@@ -343,8 +343,8 @@ function App() {
                 <DragDropContext onDragEnd={handleDrag}>
                   <div className="flex flex-col h-screen w-screen">
                     <NavBar />
-                    <div className="flex items-center justify-around h-[70%]">
-                      {showOtherDays ? (
+                    <div className="flex items-center justify-around h-[100%]">
+                      {showOtherDays && nuffSpace ? (
                         <DayLayout
                           colId="1"
                           title="Yesterday"
@@ -370,8 +370,9 @@ function App() {
                         onAdd={addTask}
                         onClick={hideDone}
                         showDone={showDone}
+                        nuffSpace={nuffSpace}
                       />
-                      {showOtherDays ? (
+                      {showOtherDays && nuffSpace ? (
                         <DayLayout
                           colId="3"
                           title="Tomorrow"

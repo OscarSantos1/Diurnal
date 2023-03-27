@@ -13,6 +13,7 @@ const DayLayout = ({
   onAdd,
   onClick,
   showDone,
+  nuffSpace,
 }) => {
   // console.log(colId)
   const taskss = tasks ? (
@@ -28,7 +29,11 @@ const DayLayout = ({
     "No tasks to show"
   );
   return (
-    <div className="relative flex flex-col space-y-[2px] items-center h-full w-[28.5%] bg-[#F3F6FB] rounded-[50px] shadow-lg shadow-[#C0C0C0] p-2 pb-20">
+    <div
+      className={`relative flex flex-col space-y-[2px] items-center h-full grow-0 ${
+        nuffSpace ? "w-[28.5%]" : "w-[90%]"
+      }  bg-[#F3F6FB] rounded-[50px] shadow-lg shadow-gray-400 p-2 pb-20`}
+    >
       <Header
         title={title}
         toggleShowAdd={toggleShowAdd}
