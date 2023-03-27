@@ -343,7 +343,7 @@ function App() {
                 <DragDropContext onDragEnd={handleDrag}>
                   <div className="flex flex-col h-screen w-screen">
                     <NavBar />
-                    <div className="flex items-center justify-around h-[76%]">
+                    <div className="flex items-center justify-around h-[70%]">
                       {showOtherDays ? (
                         <DayLayout
                           colId="1"

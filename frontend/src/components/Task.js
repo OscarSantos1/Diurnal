@@ -10,13 +10,13 @@ const Task = ({ task, onClick, onToggle }) => {
       <div className="task-status">
         {task.done ? (
           <IoIosCheckmarkCircle
-            size="32"
+            size="30"
             style={{ color: "rgb(140, 156, 0)", cursor: "pointer" }}
             onClick={onToggle}
           />
         ) : (
           <IoIosCheckmarkCircleOutline
-            size="32"
+            size="30"
             style={{ color: "rgb(140, 156, 0)", cursor: "pointer" }}
             onClick={onToggle}
           />

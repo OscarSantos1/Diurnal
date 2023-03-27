@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import Button from "./Button";
 import AddTask from "./AddTask";
 
@@ -6,8 +5,8 @@ const Header = ({ title, toggleShowAdd, showAddTask, onAdd }) => {
   return (
     <header
       className={`${
-        showAddTask ? "h-[30%]" : "h-[15%]"
-      }  bg-white rounded-t-[30px] rounded-b-md`}
+        showAddTask && title == "Today" ? "h-[33%]" : "h-[12%]"
+      }  bg-white rounded-t-[42px] rounded-b-md`}
     >
       <div className="flex items-center justify-between rounded-t-[30px] px-3 pt-3">
         <h2 className="font-normal">{title}</h2>
@@ -25,18 +24,5 @@ const Header = ({ title, toggleShowAdd, showAddTask, onAdd }) => {
     </header>
   );
 };
-
-Header.defaultProps = {
-  title: "Do me.",
-};
-
-Header.propTypes = {
-  title: PropTypes.string.isRequired,
-};
-// CSS in JS
-//const headerStyle = {
-//     color: 'red',
-//     backgroundColor: 'black',
-// }
 
 export default Header;

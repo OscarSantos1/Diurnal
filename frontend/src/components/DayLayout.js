@@ -28,7 +28,7 @@ const DayLayout = ({
     "No tasks to show"
   );
   return (
-    <div className="relative flex-col space-y-1 items-center h-full w-[28.5%] bg-slate-100 rounded-[30px] shadow-lg shadow-[#C0C0C0] p-2 pb-20">
+    <div className="relative flex-col space-y-[2px] items-center h-full w-[28.5%] bg-[#F3F6FB] rounded-[50px] shadow-lg shadow-[#C0C0C0] p-2 pb-20">
       <Header
         title={title}
         toggleShowAdd={toggleShowAdd}
@@ -37,8 +37,8 @@ const DayLayout = ({
       />
       <div
         className={`absolute-box ${
-          showAddTask ? "h-[70%]" : "h-[85%]"
-        }  bg-white rounded-b-[30px] rounded-t-md`}
+          showAddTask && title == "Today" ? "h-[67%]" : "h-[88%]"
+        }  bg-white rounded-b-[42px] rounded-t-md`}
       >
         {taskss}
         {title !== "Tomorrow" ? (
