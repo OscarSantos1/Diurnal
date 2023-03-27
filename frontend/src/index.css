@@ -144,7 +144,11 @@ h3 {
 }
 
 .header-height {
-  flex: 0 1 40px;
+  flex: 0 0 55px;
+}
+
+.header-height-open {
+  flex: 0 0 170px;
 }
 
 .take-remaining-h {
