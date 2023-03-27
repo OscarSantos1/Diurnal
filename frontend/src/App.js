@@ -386,7 +386,7 @@ function App() {
                         ""
                       )}
                     </div>
-                    <div className="other-days-btn">
+                    <div className="other-days-btn pt-5">
                       {nuffSpace ? (
                         <Button
                           color={
