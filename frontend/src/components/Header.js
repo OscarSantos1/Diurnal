@@ -4,20 +4,22 @@ import AddTask from "./AddTask";
 
 const Header = ({ title, toggleShowAdd, showAddTask, onAdd }) => {
   return (
-    <header className="header">
-      <div className="header-top-outside">
-        <div className="header-top">
-          <h2>{title}</h2>
-          {title === "Today" ? (
-            <Button
-              color={showAddTask ? "rgb(255, 22, 93)" : "rgb(97, 138, 0)"}
-              text={showAddTask ? "Close" : "Add"}
-              onClick={toggleShowAdd}
-            />
-          ) : (
-            ""
-          )}
-        </div>
+    <header
+      className={`${
+        showAddTask ? "h-[30%]" : "h-[15%]"
+      }  bg-white rounded-t-[30px] rounded-b-md`}
+    >
+      <div className="flex items-center justify-between rounded-t-[30px] px-3 pt-3">
+        <h2 className="font-normal">{title}</h2>
+        {title === "Today" ? (
+          <Button
+            color={showAddTask ? "rgb(255, 22, 93)" : "rgb(97, 138, 0)"}
+            text={showAddTask ? "Close" : "Add"}
+            onClick={toggleShowAdd}
+          />
+        ) : (
+          ""
+        )}
       </div>
       {showAddTask && title === "Today" ? <AddTask onAdd={onAdd} /> : ""}
     </header>

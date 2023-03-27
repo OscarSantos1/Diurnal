@@ -28,14 +28,18 @@ const DayLayout = ({
     "No tasks to show"
   );
   return (
-    <div className="container">
-      <div className="absolute-box">
-        <Header
-          title={title}
-          toggleShowAdd={toggleShowAdd}
-          showAddTask={showAddTask}
-          onAdd={onAdd}
-        />
+    <div className="relative flex-col space-y-1 items-center h-full w-[25%] bg-[#F3F6FB] rounded-[30px] shadow-lg shadow-[#C0C0C0] p-2 pb-20">
+      <Header
+        title={title}
+        toggleShowAdd={toggleShowAdd}
+        showAddTask={showAddTask}
+        onAdd={onAdd}
+      />
+      <div
+        className={`absolute-box ${
+          showAddTask ? "h-[70%]" : "h-[85%]"
+        }  bg-white rounded-b-[30px] rounded-t-md`}
+      >
         {taskss}
         {title !== "Tomorrow" ? (
           <FloatingBtn title={title} onClick={onClick} showDone={showDone} />

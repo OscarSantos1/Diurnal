@@ -11,6 +11,7 @@ import Register from "./components/Register";
 import axios from "axios";
 import { UserContext } from "./components/UserContext";
 import ProtectedRoutes from "./components/ProtectedRoutes";
+import NavBar from "./components/NavBar";
 
 function App() {
   const [showAddTask, setShowAddTask] = useState(false);
@@ -340,13 +341,9 @@ function App() {
               excat
               element={
                 <DragDropContext onDragEnd={handleDrag}>
-                  <div>
-                    <div className="app-name-bar">
-                      <Link className="app-name" to="/">
-                        <div>Do me.</div>
-                      </Link>
-                    </div>
-                    <div className="cont-container">
+                  <div className="flex flex-col h-screen w-screen bg-slate-100">
+                    <NavBar />
+                    <div className="flex items-center justify-around h-[76%]">
                       {showOtherDays ? (
                         <DayLayout
                           colId="1"
