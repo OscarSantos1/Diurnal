@@ -17,8 +17,8 @@ const NavBar = () => {
   };
   return (
     <Link className="app-name" to="/">
-      <div className="flex justify-between items-center px-2 md:px-6 py-2 mb-10 bg-white shadow-sm w-full">
-        <div className="text-slate-100 text-xl md:text-3xl font-thin bg-[#1f84d7] pt-[6px] pb-[7px] px-5 rounded-[20px]">
+      <div className="flex justify-between items-center px-2 md:px-6 py-2 bg-white border-b border-[#F3F2EF] w-full">
+        <div className="text-slate-100 text-xl md:text-3xl font-thin bg-[#1f84d7] pt-[6px] pb-[7px] px-8 rounded-[5px]">
           Diurnal
         </div>
         <div>

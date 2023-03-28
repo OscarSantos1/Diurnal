@@ -155,6 +155,10 @@ h3 {
   flex: 1 1 auto;
 }
 
+.fixed-h {
+  flex: 0 0 70%;
+}
+
 .app-name-bar {
   margin-top: 20px;
   font-size: 40px;
@@ -359,11 +363,7 @@ h3 {
   padding: 3px 7px;
   font-size: 17px;
 }
-.other-days-btn {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+
 footer {
   margin-top: 32px;
   text-align: center;

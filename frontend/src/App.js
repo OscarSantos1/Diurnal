@@ -341,9 +341,9 @@ function App() {
               excat
               element={
                 <DragDropContext onDragEnd={handleDrag}>
-                  <div className="flex flex-col h-screen w-screen">
+                  <div className="flex flex-col justify-between space-y-4 md:space-y-9 2xl:space-y-24 h-screen w-screen">
                     <NavBar />
-                    <div className="flex items-center justify-around h-[100%]">
+                    <div className="flex take-remaining-h items-center justify-around h-[70%]">
                       {showOtherDays && nuffSpace ? (
                         <DayLayout
                           colId="1"
@@ -355,6 +355,7 @@ function App() {
                           clearDone={clearDone}
                           onClick={passUnfinished}
                           showDone={showDone}
+                          nuffSpace={nuffSpace}
                         />
                       ) : (
                         ""
@@ -382,31 +383,34 @@ function App() {
                           deleteTask={deleteTask}
                           clearDone={clearDone}
                           showDone={showDone}
+                          nuffSpace={nuffSpace}
                         />
                       ) : (
                         ""
                       )}
                     </div>
-                    <div className="other-days-btn pt-5">
-                      {nuffSpace ? (
-                        <Button
-                          color={
-                            showOtherDays
-                              ? "rgb(255, 22, 93)"
-                              : "rgb(97, 138, 0)"
-                          }
-                          text={
-                            showOtherDays
-                              ? "Hide Yesterday & Tomorrow"
-                              : "Show Yesterday & Tomorrow"
-                          }
-                          onClick={toggleShowOtherDays}
-                        />
-                      ) : (
-                        ""
-                      )}
+                    <div className="flex flex-col items-center justify-around h-8 md:h-28">
+                      <div className="flex items-center justify-center">
+                        {nuffSpace ? (
+                          <Button
+                            color={
+                              showOtherDays
+                                ? "rgb(255, 22, 93)"
+                                : "rgb(97, 138, 0)"
+                            }
+                            text={
+                              showOtherDays
+                                ? "Hide Yesterday & Tomorrow"
+                                : "Show Yesterday & Tomorrow"
+                            }
+                            onClick={toggleShowOtherDays}
+                          />
+                        ) : (
+                          ""
+                        )}
+                      </div>
+                      <Footer />
                     </div>
-                    <Footer />
                   </div>
                 </DragDropContext>
               }
