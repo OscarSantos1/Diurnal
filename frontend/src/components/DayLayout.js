@@ -32,7 +32,7 @@ const DayLayout = ({
     <div
       className={`relative flex flex-col space-y-[2px] items-center h-full ${
         nuffSpace ? "w-[28.5%]" : "w-[90%]"
-      }  bg-[#F3F6FB] rounded-[50px] shadow-lg shadow-gray-400 p-2 pb-20`}
+      }  bg-[#F1F2F7] rounded-[50px] shadow-lg shadow-gray-400 p-2 pb-20`}
     >
       <Header
         title={title}
@@ -41,7 +41,7 @@ const DayLayout = ({
         onAdd={onAdd}
       />
       <div
-        className={`flex flex-col px-2 overflow-y-scroll take-remaining-h w-full bg-white rounded-b-[42px] rounded-t-md`}
+        className={`flex flex-col px-2 overflow-y-scroll take-remaining-h w-full bg-white rounded-b-[42px]`}
       >
         {taskss}
         {title !== "Tomorrow" ? (

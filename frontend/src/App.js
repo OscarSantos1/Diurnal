@@ -341,7 +341,7 @@ function App() {
               excat
               element={
                 <DragDropContext onDragEnd={handleDrag}>
-                  <div className="flex flex-col justify-between space-y-4 md:space-y-9 2xl:space-y-24 h-screen w-screen">
+                  <div className="flex flex-col justify-between space-y-4 md:space-y-9 2xl:space-y-24 h-screen w-screen bg-[#F1F2F7]">
                     <NavBar />
                     <div className="flex take-remaining-h items-center justify-around h-[70%]">
                       {showOtherDays && nuffSpace ? (
