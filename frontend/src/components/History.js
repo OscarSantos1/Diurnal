@@ -58,7 +58,7 @@ const History = () => {
   });
 
   return (
-    <div className="flex flex-col justify-between items-center space-y-4 md:space-y-9 2xl:space-y-24 h-screen w-screen bg-[#F1F2F7]">
+    <div className="fixed left-0 top-0 right-0 bottom-0 flex flex-col justify-between items-center space-y-4 md:space-y-9 2xl:space-y-24 bg-[#F1F2F7]">
       <NavBar />
       <div className="h-[70%] md:w-[28.5%] w-[90%] overflow-scroll rounded-[20px] bg-[#F1F2F7]">
         <ul className="history-list">{historyListItems}</ul>

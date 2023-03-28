@@ -50,7 +50,7 @@ const LogIn = () => {
   };
 
   return (
-    <div className="w-screen h-screen flex flex-col justify-center bg-black/10">
+    <div className="fixed left-0 top-0 right-0 bottom-0 flex flex-col justify-center bg-black/10">
       <div className="fixed flex justify-center top-0 left-0 right-0 text-4xl md:text-5xl my-6 text-[#0062A8]">
         <Link className="" to="/">
           <div>Diurnal</div>
