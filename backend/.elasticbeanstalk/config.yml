@@ -1,9 +1,9 @@
 branch-defaults:
-  main:
-    environment: dome-backend-121222-dev
+  default:
+    environment: diurnal-2-dev
     group_suffix: null
 global:
-  application_name: dome-backend-121222
+  application_name: diurnal-2
   branch: null
   default_ec2_keyname: null
   default_platform: Docker running on 64bit Amazon Linux 2
@@ -14,5 +14,5 @@ global:
   platform_version: null
   profile: null
   repository: null
-  sc: git
+  sc: null
   workspace_type: Application

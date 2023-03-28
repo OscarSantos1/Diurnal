@@ -1,5 +1,5 @@
 FROM python:3.11.0
-WORKDIR /task_manager
+WORKDIR /backend
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 EXPOSE 8080
